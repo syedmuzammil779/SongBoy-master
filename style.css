@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap');
+* {
+    font-family: 'Overpass', sans-serif;
+}
+body, .row, p, ul, ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    padding: 0px;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+a:hover {
+    text-decoration: none;
+}
+.mainContainer {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* max-width: 1920px; */
+    /* margin: auto; */
+    /* width: 100%; */
+    /* width: 100%; */
+}
+
+.leftSideBar {
+    /* flex: 0 25%; */
+    /* max-width: 438px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 40px;
+    /* width: 25%; */
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.rightSideContainer {
+    /* flex: 0 75%; */
+    /* max-width: 75%; */
+    /* width: 75%; */
+    padding: 0px;
+}
+
+.uploadTrack input {
+    display: none;
+}
+
+.uploadTrack label {
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+    background: #F6BC3F;
+    /* max-width: max-content; */
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.uploadTrack label img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.uploadTrack {
+    margin: 40px 0px;
+    /* max-width: max-content; */
+    /* margin: 40px auto; */
+}
+.listCOntainerLeftSide a {
+    display: flex;
+    align-items: center;
+    /* background: #F0F0F0; */
+    padding: 20px 40px;
+    margin-bottom: 11px;
+    color: #000;
+    font-size: 13px;
+}
+
+.listCOntainerLeftSide a.active {
+    background: #F0F0F0;
+}
+
+.listCOntainerLeftSide a img {
+    margin-right: 24px;
+}
+.listCOntainerLeftSide li:last-child a {
+    margin-top: 100px;
+}
+.bannerContainer {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    color: #fff;
+    position: relative;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.progileIngo {
+    background: #fff;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 9px;
+}
+
+.infoProfile {
+    display: flex;
+    align-items: center;
+}
+
+.infoProfile h5 {
+    margin: 0px;
+    font-size: 17px;
+    /* margin: 0px 20px; */
+    position: relative;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.infoProfile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 20px 0px 0px;
+}
+
+.infoProfile h5::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #ADADAD;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.tags span {
+    display: inline-block;
+    background: #ffffff17;
+    border-radius: 20px;
+    padding: 5px 23px;
+    font-size: 14px;
+    margin: 0px 10px 0px 0px;
+}
+
+.tags {
+    margin-bottom: 30px;
+}
+
+.contentCOntainerBanner h2 {
+    font-size: 62px;
+    font-weight: 800;
+}
+
+.contentCOntainerBanner p {
+    font-size: 16px;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+.contentCOntainerBanner .uploadTrack label {
+    max-width: max-content;
+    font-size: 14px;
+}
+.latestTracks {
+    background: #F1F2F6;
+    padding: 40px;
+}
+
+.latestTracks table th {
+    font-weight: 600;
+    color: #000;
+    opacity: 0.4;
+}
+.latestTracks h2 {
+    font-size: 21px;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.latestTracks tr:not(:first-child) {
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 10px;
+    padding: 20px;
+    overflow: hidden;
+    /* min-height: 120px; */
+}
+
+.latestTracks table {
+    width: 100%;
+    border-collapse: separate;
+    /* border-spacing: 8px; */
+    border-spacing: 0px 13px;
+}
+
+.latestTracks tr:not(:first-child) td {
+    background: #fff;
+    padding: 12px;
+}
+.nameCOntainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nameCOntainer img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nameCOntainer i.fa-play {
+    background: #D9D9D9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.nameCOntainer h5 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.nameCOntainer span {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    opacity: 0.5;
+    margin: 4px 0px 0px;
+    font-weight: 300;
+}
+.latestTracks .fa-heart,.latestTracks .fa-play {
+    color: #999999;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.accountCreattion {
+    background: #F1F2F6;
+    padding: 50px;
+    min-height: 100vh;
+    position: relative;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+}
+
+.bodyContainer {
+    margin: 100px 0px 0px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(100 100 111 / 4%) 0px 7px 29px 0px;
+    height: 100%;
+    padding-bottom: 20%;
+    padding-left: 0px;
+}
+
+.mainRight {
+    /* min-height: 100vh; */
+    /* max-height: 100vh; */
+    /* height: 100vh; */
+}
+
+.bodyContainer .col-md-6, .bodyContainer .col-md-4 {
+    padding: 0px;
+}
+
+.profileContent h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.profileContent h2 + p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    opacity: 0.5;
+}
+
+.profileContent h4 {
+    margin: 30px 0px;
+    font-weight: 700;
+    opacity: 0.4;
+    font-size: 24px;
+}
+
+.profileContent label {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.4;
+}
+
+.bodyContainer .col-md-6 {
+    border-bottom: 1px solid #cccccc52;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.profileContent h6 {
+    font-size: 16px;
+}
+.bodyContainer .col-md-4 {
+    padding: 40px;
+}
+.bodyContainer .row {
+    align-items: center;
+}
+.header h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+.profileContent input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.bodyContainer.profile .col-md-6 {
+    border: none;
+    padding: 0px 25px 0px 0px;
+}
+.bodyContainer.profile .row .row {
+    margin: 50px 0px;
+}
+.save {
+    background: #F6BC3F;
+    color: #fff;
+    border: 2px solid #F6BC3F;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 50px 0px 0px;
+    transition: 0.7s all;
+}
+.save:hover {
+    background: none;
+    color: #F6BC3F;
+}
+.profileContent .col-md-12 {
+    padding: 0px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .leftSideBar.col-md-3 {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .listCOntainerLeftSide {
+        overflow: hidden;
+    }
+
+    .listCOntainerLeftSide ul {display: flex;overflow: scroll;}
+
+    .listCOntainerLeftSide a {
+        min-width: 200px;
+        padding: 10px 20px;
+    }
+
+    .listCOntainerLeftSide li:last-child a {
+        margin: 0px;
+    }
+
+    .progileIngo {
+        top: 20px;
+        padding: 10px 10px;
+    }
+
+    .infoProfile h5 {
+        font-size: 13px;
+    }
+
+    .infoProfile {
+        top: 10px;
+    }
+
+    .infoProfile img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .bannerContainer {
+        padding: 20px 10px;
+        background-blend-mode: multiply;
+        background-color: #00000091;
+        background-position: center;
+        min-height: 400px;
+    }
+
+    .tags span {
+        font-size: 11px;
+    }
+
+    .contentCOntainerBanner h2 {
+        font-size: 42px;
+    }
+
+    .contentCOntainerBanner .uploadTrack label {
+        font-size: 13px;
+        padding: 5px 20px;
+    }
+
+    .latestTracks {
+        padding: 20px 10px;
+    }
+
+    .nameCOntainer {
+        display: block;
+    }
+
+    .nameCOntainer i.fa-play {
+        display: none;
+    }
+
+    .nameCOntainer h5 {margin: 10px 0px 0px;font-size: 12px;}
+
+    .nameCOntainer span {
+        font-size: 11px;
+    }
+
+    .latestTracks tr:not(:first-child) td {
+        font-size: 12px;
+    }
+
+    .latestTracks tr:not(:first-child) td i {
+        display: none;
+    }
+
+    .latestTracks table th {
+        font-size: 13px;
+    }
+
+    .latestTracks .container {
+        padding: 0px;
+    }
+
+    .latestTracks h2 {
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+    .accountCreattion {
+        padding: 20px 10px;
+    }
+
+    .mainRight .progileIngo {
+        position: relative;
+        max-width: max-content;
+        top: auto;
+        bottom: auto;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bodyContainer.profile {
+        margin: 20px 0px;
+        padding: 20px;
+    }
+
+    .bodyContainer .col-md-4 {
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+}
